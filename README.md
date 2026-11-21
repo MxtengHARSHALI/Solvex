@@ -4,7 +4,7 @@ A smart automated solar panel cleaning robot that uses a rack-and-pinion mechani
 - Dust accumulation reduces solar panel efficiency.
 - Manual cleaning requires time and effort.
 - Regular maintenance can be difficult for large solar installations.
-## Objectives
+# Objectives
 - Automate solar panel cleaning.
 - Reduce manual effort.
 - Remove dust using a roller brush and water system.
