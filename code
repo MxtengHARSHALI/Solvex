@@ -1,1 +1,61 @@
 
+/*
+  Project: Solar Cleaning Robot
+  Controller: Arduino UNO
+  Motor: 60 RPM DC Geared Motor
+  Driver: L298N
+*/
+
+// Motor Driver Pins
+int ENA = 5;
+int IN1 = 8;
+int IN2 = 9;
+
+void setup()
+{
+  pinMode(ENA, OUTPUT);
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+
+  Serial.begin(9600);
+
+  Serial.println("Solar Cleaning Robot Motor Started");
+}
+
+void loop()
+{
+  // Forward Direction
+  Serial.println("Motor Moving Forward");
+
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  analogWrite(ENA, 180);
+
+  delay(5000);
+
+  // Stop Motor
+  Serial.println("Motor Stopped");
+
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+
+  delay(2000);
+
+  // Reverse Direction
+  Serial.println("Motor Moving Reverse");
+
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  analogWrite(ENA, 180);
+
+  delay(5000);
+
+  // Stop Motor
+  Serial.println("Motor Stopped");
+
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+
+  delay(2000);
+}
+
