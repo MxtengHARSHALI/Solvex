@@ -12,7 +12,7 @@ A smart automated solar panel cleaning robot that uses a rack-and-pinion mechani
 - Improve cleaning efficiency.
   
 # 4. Components Used
-- Arduino Uno
+- Arduino Uno/ Raspberry pi 5G
 - 60 RPM DC Geared Motor
 - Motor Driver
 - IR Sensors
